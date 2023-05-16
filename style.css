@@ -87,7 +87,7 @@ section{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 40px;
 }
 .paragraph-home{
@@ -167,6 +167,7 @@ header.sticky{
     background: var(--main-color);
     border-bottom: 1px solid #0000001a;
     padding: 9px 15%;
+    
 }
 .about{
     display: flex;
@@ -464,20 +465,86 @@ header.sticky{
             font-size: 15px;
         }
     }
-    @media (max-width: 930px){
+    @media (max-width: 768px){
         .home{
             flex-direction: column;
             gap: 0;
+            position: relative;
+            height: auto;
         }
         .paragraph-home{
             width: auto;
             height: auto;
-            margin-top: 150px;
             justify-items: center;
-            border: 1px solid black;
+            align-items: center;
+            text-align: center;
+        }
+        .paragraph-home p{
+            text-align: center;
         }
         .image-home img{
-            display: none;
+            width: 100%;
+        }
+    }
+    @media (max-width: 650px){
+        .home{
+            text-align: center;
+        }
+        .image-home img{
+            width: 80%;
+        }
+        .main-about{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+        }
+        .about-image img{
+            width: 100%;
+        }
+        .about-paragraph{
+            text-align: center;
+        }
+        .main-scope{
+            width: 350px;
+            height: 700px;
+        }
+        #scope-box{
+            flex-direction: column;
+        }
+        .scope{
+            width: 270px;
+            height: 120px;
+        }
+        .scope img{
+            width: 23%;
+        }
+        .scope h2{
+            font-size: 23px;
+        }
+        .scope p{
+            font-size: 15px;
+        }
+    }
+    @media (max-width: 425px){
+        #menu-icon{
+            padding-right: 30px;
+        }
+        .home{
+            height: 100vh;
+        }
+        .image-home img{
+            width: 60%;
+        }
+        section{
+            padding: 160px 3% 120px;
+            align-items: center;
+            align-content: center;
+        }
+        .main-scope{
+            width: 300px;
         }
     }
 }
