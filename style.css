@@ -169,7 +169,7 @@ section{
     transform: scale(1.1) translateY(5px);
 }
 header.sticky{
-    background: var(--bg-color);
+    background: var(--main-color);
     border-bottom: 1px solid #ffffff1a;
     padding: 12px 15%;
 }
